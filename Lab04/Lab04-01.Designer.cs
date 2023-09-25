@@ -1,6 +1,6 @@
 ﻿namespace Lab04
 {
-    partial class Form1
+    partial class FormStudent
     {
         /// <summary>
         /// Required designer variable.
@@ -47,6 +47,7 @@
             this.btn_sua = new System.Windows.Forms.Button();
             this.btn_xoa = new System.Windows.Forms.Button();
             this.btn_thoat = new System.Windows.Forms.Button();
+            this.btn_quanlykhoa = new System.Windows.Forms.Button();
             this.gb_thongtin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_sinhvien)).BeginInit();
             this.SuspendLayout();
@@ -79,7 +80,7 @@
             this.gb_thongtin.Size = new System.Drawing.Size(286, 236);
             this.gb_thongtin.TabIndex = 1;
             this.gb_thongtin.TabStop = false;
-            this.gb_thongtin.Text = "Thông tin sinh viên";
+            this.gb_thongtin.Text = "THÔNG TIN SINH VIÊN";
             // 
             // cb_khoa
             // 
@@ -234,11 +235,22 @@
             this.btn_thoat.UseVisualStyleBackColor = true;
             this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
             // 
-            // Form1
+            // btn_quanlykhoa
+            // 
+            this.btn_quanlykhoa.Location = new System.Drawing.Point(685, 382);
+            this.btn_quanlykhoa.Name = "btn_quanlykhoa";
+            this.btn_quanlykhoa.Size = new System.Drawing.Size(103, 23);
+            this.btn_quanlykhoa.TabIndex = 5;
+            this.btn_quanlykhoa.Text = "Quản lý khoa";
+            this.btn_quanlykhoa.UseVisualStyleBackColor = true;
+            this.btn_quanlykhoa.Click += new System.EventHandler(this.btn_quanlykhoa_Click);
+            // 
+            // FormStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 456);
+            this.Controls.Add(this.btn_quanlykhoa);
             this.Controls.Add(this.btn_thoat);
             this.Controls.Add(this.btn_xoa);
             this.Controls.Add(this.btn_sua);
@@ -247,7 +259,7 @@
             this.Controls.Add(this.gb_thongtin);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Name = "Form1";
+            this.Name = "FormStudent";
             this.Text = "Lab04-01";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gb_thongtin.ResumeLayout(false);
@@ -279,6 +291,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.Button btn_quanlykhoa;
     }
 }
 

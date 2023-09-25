@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace Lab04
 {
-    public partial class Form1 : Form
+    public partial class FormStudent : Form
     {
         private StudentContextDB context;
-        public Form1()
+        public FormStudent()
         {
             InitializeComponent();
         }
@@ -50,7 +50,7 @@ namespace Lab04
         {
             string mssv = tb_maso.Text;
             string hoTen = tb_maso.Text;
-            String diemTB = tb_dtb.Text.ToString();
+            string diemTB = tb_dtb.Text.ToString();
             if (string.IsNullOrEmpty(mssv) || string.IsNullOrEmpty(hoTen) || string.IsNullOrEmpty(diemTB))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -71,7 +71,7 @@ namespace Lab04
         }
         private void btn_thoat_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
         private void ResetData()
         {
@@ -204,6 +204,13 @@ namespace Lab04
                 FACULTY s = context.FACULTies.FirstOrDefault(p => p.FacultyName == khoa);
                 cb_khoa.SelectedValue = s.FacultyID;
             }
+        }
+
+        private void btn_quanlykhoa_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormFaculty facultyForm = new FormFaculty();
+            facultyForm.Show();
         }
     }
 }
