@@ -66,7 +66,7 @@ namespace Lab04
                 MessageBox.Show("Mã số sinh viên phải có 10 kí tự!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-
+            
             return true;
         }
         private void btn_thoat_Click(object sender, EventArgs e)
@@ -87,6 +87,13 @@ namespace Lab04
         {
             if (!IsDataValid())
             {
+                return;
+            }
+            string mssv = tb_maso.Text;
+            bool maSinhVienDaTonTai = context.STUDENTs.Any(s => s.StudentID == mssv);
+            if (maSinhVienDaTonTai)
+            {
+                MessageBox.Show("Mã số sinh viên đã tồn tại trong cơ sở dữ liệu!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             STUDENT newStudent = new STUDENT()
