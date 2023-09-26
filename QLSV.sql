@@ -30,7 +30,8 @@ create table STUDENT (
 	constraint FK_STUDENT foreign key(FacultyID) references FACULTY (FacultyID)
 )
 
-
+Alter table FACULTY
+add TotolProfessor int null
 
 Drop table FACULTY
 go

@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.gb_thongtinkhoa = new System.Windows.Forms.GroupBox();
-            this.dgv_faculty = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tb_makhoa = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tb_tenkhoa = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.tb_tonggs = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tb_tenkhoa = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tb_makhoa = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dgv_faculty = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,6 +62,57 @@
             this.gb_thongtinkhoa.TabStop = false;
             this.gb_thongtinkhoa.Text = "THÔNG TIN KHOA";
             // 
+            // tb_tonggs
+            // 
+            this.tb_tonggs.Location = new System.Drawing.Point(88, 162);
+            this.tb_tonggs.Name = "tb_tonggs";
+            this.tb_tonggs.Size = new System.Drawing.Size(100, 20);
+            this.tb_tonggs.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(18, 165);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Tổng số GS";
+            // 
+            // tb_tenkhoa
+            // 
+            this.tb_tenkhoa.Location = new System.Drawing.Point(88, 97);
+            this.tb_tenkhoa.Name = "tb_tenkhoa";
+            this.tb_tenkhoa.Size = new System.Drawing.Size(175, 20);
+            this.tb_tenkhoa.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(18, 100);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Tên Khoa";
+            // 
+            // tb_makhoa
+            // 
+            this.tb_makhoa.Location = new System.Drawing.Point(88, 41);
+            this.tb_makhoa.Name = "tb_makhoa";
+            this.tb_makhoa.Size = new System.Drawing.Size(100, 20);
+            this.tb_makhoa.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(18, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mã Khoa";
+            // 
             // dgv_faculty
             // 
             this.dgv_faculty.AllowUserToAddRows = false;
@@ -76,57 +127,6 @@
             this.dgv_faculty.ReadOnly = true;
             this.dgv_faculty.Size = new System.Drawing.Size(487, 308);
             this.dgv_faculty.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(18, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Mã Khoa";
-            // 
-            // tb_makhoa
-            // 
-            this.tb_makhoa.Location = new System.Drawing.Point(88, 41);
-            this.tb_makhoa.Name = "tb_makhoa";
-            this.tb_makhoa.Size = new System.Drawing.Size(100, 20);
-            this.tb_makhoa.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(18, 100);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Tên Khoa";
-            // 
-            // tb_tenkhoa
-            // 
-            this.tb_tenkhoa.Location = new System.Drawing.Point(88, 97);
-            this.tb_tenkhoa.Name = "tb_tenkhoa";
-            this.tb_tenkhoa.Size = new System.Drawing.Size(175, 20);
-            this.tb_tenkhoa.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(18, 165);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Tổng số GS";
-            // 
-            // tb_tonggs
-            // 
-            this.tb_tonggs.Location = new System.Drawing.Point(88, 162);
-            this.tb_tonggs.Name = "tb_tonggs";
-            this.tb_tonggs.Size = new System.Drawing.Size(100, 20);
-            this.tb_tonggs.TabIndex = 1;
             // 
             // Column1
             // 
@@ -182,7 +182,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(803, 365);
+            this.ClientSize = new System.Drawing.Size(803, 358);
             this.Controls.Add(this.btn_dong);
             this.Controls.Add(this.btn_xoa);
             this.Controls.Add(this.btn_themsua);

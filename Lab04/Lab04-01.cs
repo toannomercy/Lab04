@@ -56,9 +56,9 @@ namespace Lab04
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-            if (!double.TryParse(tb_dtb.Text, out double averageScore) || Double.Parse(tb_dtb.Text) < 0)
+            if (!double.TryParse(tb_dtb.Text, out double averageScore) || Double.Parse(tb_dtb.Text) < 0 || Double.Parse(tb_dtb.Text) > 10)
             {
-                MessageBox.Show("Điểm trung bình phải là kiểu số thực và không âm!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Điểm trung bình phải là kiểu số thực, không âm và bé hơn hoặc bằng 10!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             if (mssv.Length != 10)
