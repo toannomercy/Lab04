@@ -208,9 +208,32 @@ namespace Lab04
 
         private void btn_quanlykhoa_Click(object sender, EventArgs e)
         {
+            QuanLyKhoa();
+        }
+
+        private void QuanLyKhoa()
+        {
             this.Hide();
             FormFaculty facultyForm = new FormFaculty();
             facultyForm.Show();
+        }
+
+        private void quảnLýKhoaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLyKhoa();
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
+
+        private void tìmKiếmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormFind findForm = new FormFind();
+            findForm.Show();
         }
     }
 }
