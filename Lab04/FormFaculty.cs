@@ -63,6 +63,13 @@ namespace Lab04
             if (s == null) return null;
             return s;
         }
+
+        private STUDENT checkIfStudentExists(int id)
+        {
+            STUDENT s = context.STUDENTs.FirstOrDefault(p => p.FacultyID == id);
+            if (s == null) return null;
+            return s;
+        }
         private bool IsDataValid()
         {
             string id = tb_makhoa.Text;
@@ -156,7 +163,7 @@ namespace Lab04
             }
             DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa khoa này?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-            if (result == DialogResult.Yes)
+            if (result == DialogResult.Yes && checkIfStudentExists(ID) == null)
             {
                 context.FACULTies.Remove(checkIfIdExists(ID));
                 context.SaveChanges();
@@ -164,6 +171,11 @@ namespace Lab04
                 MessageBox.Show("Xóa khoa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
+            else
+            {
+                MessageBox.Show("Không thể khoa đang có sinh viên!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }    
         }
 
     }

@@ -67,7 +67,7 @@
             this.tb_tonggs.Location = new System.Drawing.Point(88, 162);
             this.tb_tonggs.Name = "tb_tonggs";
             this.tb_tonggs.Size = new System.Drawing.Size(100, 20);
-            this.tb_tonggs.TabIndex = 1;
+            this.tb_tonggs.TabIndex = 3;
             // 
             // label3
             // 
@@ -84,7 +84,7 @@
             this.tb_tenkhoa.Location = new System.Drawing.Point(88, 97);
             this.tb_tenkhoa.Name = "tb_tenkhoa";
             this.tb_tenkhoa.Size = new System.Drawing.Size(175, 20);
-            this.tb_tenkhoa.TabIndex = 1;
+            this.tb_tenkhoa.TabIndex = 2;
             // 
             // label2
             // 

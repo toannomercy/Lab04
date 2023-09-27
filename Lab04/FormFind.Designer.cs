@@ -72,14 +72,14 @@
             this.cmb_khoa.Location = new System.Drawing.Point(112, 84);
             this.cmb_khoa.Name = "cmb_khoa";
             this.cmb_khoa.Size = new System.Drawing.Size(178, 21);
-            this.cmb_khoa.TabIndex = 2;
+            this.cmb_khoa.TabIndex = 3;
             // 
             // txt_hoten
             // 
             this.txt_hoten.Location = new System.Drawing.Point(112, 58);
             this.txt_hoten.Name = "txt_hoten";
             this.txt_hoten.Size = new System.Drawing.Size(178, 20);
-            this.txt_hoten.TabIndex = 1;
+            this.txt_hoten.TabIndex = 2;
             // 
             // label3
             // 

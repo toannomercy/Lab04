@@ -96,21 +96,21 @@
             this.cb_khoa.Location = new System.Drawing.Point(88, 105);
             this.cb_khoa.Name = "cb_khoa";
             this.cb_khoa.Size = new System.Drawing.Size(172, 21);
-            this.cb_khoa.TabIndex = 2;
+            this.cb_khoa.TabIndex = 3;
             // 
             // tb_dtb
             // 
             this.tb_dtb.Location = new System.Drawing.Point(88, 142);
             this.tb_dtb.Name = "tb_dtb";
             this.tb_dtb.Size = new System.Drawing.Size(57, 20);
-            this.tb_dtb.TabIndex = 1;
+            this.tb_dtb.TabIndex = 4;
             // 
             // tb_hoten
             // 
             this.tb_hoten.Location = new System.Drawing.Point(88, 66);
             this.tb_hoten.Name = "tb_hoten";
             this.tb_hoten.Size = new System.Drawing.Size(172, 20);
-            this.tb_hoten.TabIndex = 1;
+            this.tb_hoten.TabIndex = 2;
             // 
             // tb_maso
             // 
