@@ -23,6 +23,13 @@ namespace Lab04
         {
             context = new StudentContextDB();
             List<FACULTY> listFaculty = context.FACULTies.ToList();
+            List<STUDENT> listStudent = context.STUDENTs.ToList();
+            AutoCompleteStringCollection auto = new AutoCompleteStringCollection();
+            foreach (var item in listStudent)
+                auto.Add(item.FullName);
+            txt_hoten.AutoCompleteCustomSource = auto;
+            txt_hoten.AutoCompleteMode = AutoCompleteMode.Suggest;
+            txt_hoten.AutoCompleteSource = AutoCompleteSource.CustomSource;
             FillFalcultyCombobox(listFaculty);
         }
 
