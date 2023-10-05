@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
@@ -45,7 +46,7 @@ namespace Lab04_04
                 decimal sum = context.Orders.Where(detail => detail.InvoiceNo == item.InvoiceNo).Sum(detail => detail.Price * detail.Quantity);
                 dgv_orderinfo.Rows[index].Cells[4].Value = sum;
             }
-            txt_amount.Text = dgv_orderinfo.Rows.Count.ToString();
+            updateTextBox();
 
         }
         private List<Invoice> GetOrder()
@@ -60,6 +61,13 @@ namespace Lab04_04
             var listInvoice = context.Invoices.Where(x => x.OrderDate.Month >= orderMonth && x.DeliveryDate.Month <= deliveryMonth);
             return listInvoice.ToList();
         }
+        private void updateTextBox()
+        {
+            txt_amount.Text = dgv_orderinfo.Rows
+                     .Cast<DataGridViewRow>()
+                     .Sum(r => decimal.Parse(r.Cells[4].Value.ToString()))
+                     .ToString();
+        }
         private void dtp_orderdate_ValueChanged(object sender, EventArgs e)
         {
             orderMonth = dtp_orderdate.Value.Month;
@@ -71,7 +79,7 @@ namespace Lab04_04
             else
                 listData = GetOrder();
             BindGrid(listData);
-            txt_amount.Text = dgv_orderinfo.Rows.Count.ToString();
+            updateTextBox();
         }
     }
 }
