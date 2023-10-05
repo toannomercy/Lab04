@@ -56,9 +56,9 @@
             this.gb_thongtinkhoa.Controls.Add(this.label1);
             this.gb_thongtinkhoa.ForeColor = System.Drawing.Color.Blue;
             this.gb_thongtinkhoa.Location = new System.Drawing.Point(16, 15);
-            this.gb_thongtinkhoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gb_thongtinkhoa.Margin = new System.Windows.Forms.Padding(4);
             this.gb_thongtinkhoa.Name = "gb_thongtinkhoa";
-            this.gb_thongtinkhoa.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gb_thongtinkhoa.Padding = new System.Windows.Forms.Padding(4);
             this.gb_thongtinkhoa.Size = new System.Drawing.Size(377, 287);
             this.gb_thongtinkhoa.TabIndex = 0;
             this.gb_thongtinkhoa.TabStop = false;
@@ -67,7 +67,7 @@
             // tb_tonggs
             // 
             this.tb_tonggs.Location = new System.Drawing.Point(117, 199);
-            this.tb_tonggs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_tonggs.Margin = new System.Windows.Forms.Padding(4);
             this.tb_tonggs.Name = "tb_tonggs";
             this.tb_tonggs.Size = new System.Drawing.Size(132, 22);
             this.tb_tonggs.TabIndex = 3;
@@ -86,7 +86,7 @@
             // tb_tenkhoa
             // 
             this.tb_tenkhoa.Location = new System.Drawing.Point(117, 119);
-            this.tb_tenkhoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_tenkhoa.Margin = new System.Windows.Forms.Padding(4);
             this.tb_tenkhoa.Name = "tb_tenkhoa";
             this.tb_tenkhoa.Size = new System.Drawing.Size(232, 22);
             this.tb_tenkhoa.TabIndex = 2;
@@ -105,7 +105,7 @@
             // tb_makhoa
             // 
             this.tb_makhoa.Location = new System.Drawing.Point(117, 50);
-            this.tb_makhoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_makhoa.Margin = new System.Windows.Forms.Padding(4);
             this.tb_makhoa.Name = "tb_makhoa";
             this.tb_makhoa.Size = new System.Drawing.Size(132, 22);
             this.tb_makhoa.TabIndex = 1;
@@ -125,13 +125,14 @@
             // 
             this.dgv_faculty.AllowUserToAddRows = false;
             this.dgv_faculty.AllowUserToDeleteRows = false;
+            this.dgv_faculty.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_faculty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_faculty.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
             this.dgv_faculty.Location = new System.Drawing.Point(401, 15);
-            this.dgv_faculty.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_faculty.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_faculty.Name = "dgv_faculty";
             this.dgv_faculty.ReadOnly = true;
             this.dgv_faculty.RowHeadersWidth = 51;
@@ -144,7 +145,6 @@
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 125;
             // 
             // Column2
             // 
@@ -152,7 +152,6 @@
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 200;
             // 
             // Column3
             // 
@@ -160,12 +159,11 @@
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 150;
             // 
             // btn_themsua
             // 
             this.btn_themsua.Location = new System.Drawing.Point(167, 366);
-            this.btn_themsua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_themsua.Margin = new System.Windows.Forms.Padding(4);
             this.btn_themsua.Name = "btn_themsua";
             this.btn_themsua.Size = new System.Drawing.Size(100, 28);
             this.btn_themsua.TabIndex = 2;
@@ -176,7 +174,7 @@
             // btn_xoa
             // 
             this.btn_xoa.Location = new System.Drawing.Point(293, 366);
-            this.btn_xoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_xoa.Margin = new System.Windows.Forms.Padding(4);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(100, 28);
             this.btn_xoa.TabIndex = 2;
@@ -187,7 +185,7 @@
             // btn_dong
             // 
             this.btn_dong.Location = new System.Drawing.Point(951, 401);
-            this.btn_dong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_dong.Margin = new System.Windows.Forms.Padding(4);
             this.btn_dong.Name = "btn_dong";
             this.btn_dong.Size = new System.Drawing.Size(100, 28);
             this.btn_dong.TabIndex = 2;
@@ -205,7 +203,7 @@
             this.Controls.Add(this.btn_themsua);
             this.Controls.Add(this.dgv_faculty);
             this.Controls.Add(this.gb_thongtinkhoa);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormFaculty";
             this.Text = "FormFaculty";
             this.Load += new System.EventHandler(this.FormFaculty_Load);

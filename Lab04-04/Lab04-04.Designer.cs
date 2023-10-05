@@ -54,9 +54,9 @@
             this.gb_thongtin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_thongtin.ForeColor = System.Drawing.Color.Blue;
             this.gb_thongtin.Location = new System.Drawing.Point(17, 16);
-            this.gb_thongtin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gb_thongtin.Margin = new System.Windows.Forms.Padding(4);
             this.gb_thongtin.Name = "gb_thongtin";
-            this.gb_thongtin.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gb_thongtin.Padding = new System.Windows.Forms.Padding(4);
             this.gb_thongtin.Size = new System.Drawing.Size(1029, 178);
             this.gb_thongtin.TabIndex = 0;
             this.gb_thongtin.TabStop = false;
@@ -66,7 +66,7 @@
             // 
             this.dtp_deliverydate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_deliverydate.Location = new System.Drawing.Point(643, 103);
-            this.dtp_deliverydate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtp_deliverydate.Margin = new System.Windows.Forms.Padding(4);
             this.dtp_deliverydate.Name = "dtp_deliverydate";
             this.dtp_deliverydate.Size = new System.Drawing.Size(319, 24);
             this.dtp_deliverydate.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             this.dtp_orderdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_orderdate.Location = new System.Drawing.Point(263, 103);
-            this.dtp_orderdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtp_orderdate.Margin = new System.Windows.Forms.Padding(4);
             this.dtp_orderdate.Name = "dtp_orderdate";
             this.dtp_orderdate.Size = new System.Drawing.Size(321, 24);
             this.dtp_orderdate.TabIndex = 3;
@@ -90,7 +90,7 @@
             this.cb_showall.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_showall.ForeColor = System.Drawing.Color.Black;
             this.cb_showall.Location = new System.Drawing.Point(53, 58);
-            this.cb_showall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_showall.Margin = new System.Windows.Forms.Padding(4);
             this.cb_showall.Name = "cb_showall";
             this.cb_showall.Size = new System.Drawing.Size(179, 22);
             this.cb_showall.TabIndex = 0;
@@ -113,6 +113,7 @@
             // 
             this.dgv_orderinfo.AllowUserToAddRows = false;
             this.dgv_orderinfo.AllowUserToDeleteRows = false;
+            this.dgv_orderinfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_orderinfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_orderinfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -121,7 +122,7 @@
             this.Column4,
             this.Column5});
             this.dgv_orderinfo.Location = new System.Drawing.Point(17, 203);
-            this.dgv_orderinfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_orderinfo.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_orderinfo.Name = "dgv_orderinfo";
             this.dgv_orderinfo.ReadOnly = true;
             this.dgv_orderinfo.RowHeadersWidth = 51;
@@ -134,7 +135,6 @@
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 125;
             // 
             // Column2
             // 
@@ -142,7 +142,6 @@
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 150;
             // 
             // Column3
             // 
@@ -150,7 +149,6 @@
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 160;
             // 
             // Column4
             // 
@@ -158,7 +156,6 @@
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            this.Column4.Width = 160;
             // 
             // Column5
             // 
@@ -166,7 +163,6 @@
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
-            this.Column5.Width = 160;
             // 
             // label1
             // 
@@ -181,7 +177,7 @@
             // txt_amount
             // 
             this.txt_amount.Location = new System.Drawing.Point(804, 686);
-            this.txt_amount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_amount.Margin = new System.Windows.Forms.Padding(4);
             this.txt_amount.Name = "txt_amount";
             this.txt_amount.ReadOnly = true;
             this.txt_amount.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -198,7 +194,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv_orderinfo);
             this.Controls.Add(this.gb_thongtin);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormProduct";
             this.Text = "FormProduct";
             this.Load += new System.EventHandler(this.FormProduct_Load);
